@@ -1,0 +1,146 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0 15px; /* Add padding for smaller screens */
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 50px;
+        }
+
+        .login-container h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .login-container p {
+            margin: 0 0 30px;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .input-group i {
+            margin-right: 12px;
+            color: #888;
+            font-size: 18px;
+        }
+
+        .input-group input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 16px;
+            background-color: transparent;
+        }
+
+        .login-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .role-select {
+            margin-top: 18px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .role-select label {
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .role-select select {
+            padding: 8px 10px;
+            font-size: 16px;
+            flex-grow: 1;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 15px 20px;
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .login-container h1 {
+                font-size: 20px;
+            }
+
+            .login-container p {
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+
+            .input-group {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            .input-group i {
+                font-size: 14px;
+                margin-right: 10px;
+            }
+
+            .input-group input {
+                font-size: 12px;
+            }
+
+            .login-btn {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .role-select {
+                margin-top: 12px;
+                font-size: 12px;
+                flex-direction: column; /* Stack label and select vertically */
+                align-items: flex-start;
+            }
+
+            .role-select label {
+                margin-bottom: 5px;
+            }
+
+            .role-select select {
+                width: 100%; /* Make select take full width */
+            }
+        }
